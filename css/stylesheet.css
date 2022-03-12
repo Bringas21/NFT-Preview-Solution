@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#product {
+    color: #fff;
+    background: hsl(216, 50%, 16%);
+    width: 22%;
+    padding: 25px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    font-size: 18px;
+}
+
+.image{
+    position: relative;
+}
+
+.img-wrapper {
+    display: block;
+    width: 100%;
+    border-radius: 5%;
+    align-self: center;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 247, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 5%;
+}
+
+.img-overlay:hover{
+    opacity: 100;
+    cursor: pointer;
+}
+
+.preview-icon{
+    height: 18%;
+    width: 18%;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+#title:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+#description{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.coin-info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 15px;
+    padding-bottom: 20px;
+    border-bottom: solid 2px hsl(215, 32%, 27%);
+}
+
+#price{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+#time-left{
+    color: hsl(215, 51%, 70%);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 15px;
+    font-size: 300;
+}
+
+.user-img{
+    align-self: center;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+#user-creator{
+    color: hsl(215, 51%, 70%);
+}
+
+#user-name{
+    color: #fff;
+}
+
+#user-name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 376px){
+    #product{
+        width: 95%;
+    }
+}
